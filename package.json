@@ -1,0 +1,35 @@
+{
+  "type": "module",
+  "author": {
+    "name": "Artur Frank",
+    "url": "https://vk.com/gmelum"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GMELUM/fastify-easy-router.git"
+  },
+  "scripts": {
+    "build": "tsc && cp -r static/* ./dist",
+    "start": "yarn build && cross-env NODE_PATH=./dist nodemon",
+    "release": "git subtree push --prefix dist https://github.com/GMELUM/fastify-easy-router release"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src",
+      "index.ts"
+    ],
+    "ext": "ts",
+    "exec": "tsc && ts-node index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.5",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "fastify": "^4.4.0",
+    "fastify-plugin": "^4.1.0"
+  }
+}
