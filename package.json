@@ -1,0 +1,21 @@
+{
+  "name": "fastify-easy-router",
+  "version": "0.0.1",
+  "description": "Fastify plugin router",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "license": "MIT",
+  "author": { "name": "Artur Frank", "url":"https://vk.com/gmelum"},
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GMELUM/fastify-easy-router.git"
+  },
+  "peerDependencies": {
+    "fastify-plugin": "^4.1.0"
+  },
+  "keywords": [
+    "fastify",
+    "router"
+  ]
+}
