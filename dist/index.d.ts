@@ -8,14 +8,10 @@ export declare type IExecute<T> = {
 } & Record<string, any>;
 export interface Controller {
     method: HTTPMethods;
-    access: {
-        [key: string]: boolean;
-    };
+    access: ExecuteAccess;
     controller: TController<FastifyRequest>;
 }
-export declare type ExecuteAccess = {
-    [key: string]: boolean;
-};
+export declare type ExecuteAccess = Array<string>;
 declare type TCallbackOpts = {
     path: string;
     middleware?: string;

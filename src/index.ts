@@ -13,11 +13,11 @@ export type IExecute<T> = {
 
 export interface Controller {
   method: HTTPMethods;
-  access: { [key: string]: boolean };
+  access: ExecuteAccess;
   controller: TController<FastifyRequest>
 }
 
-export type ExecuteAccess = { [key: string]: boolean };
+export type ExecuteAccess = Array<string>;
 
 type TCallbackOpts = {
   path: string;

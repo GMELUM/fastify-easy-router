@@ -1,6 +1,6 @@
 {
   "name": "fastify-easy-router",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Fastify plugin router",
   "main": "./index.js",
   "types": "./index.d.ts",
